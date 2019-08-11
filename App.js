@@ -45,19 +45,6 @@ export default class App extends React.Component {
       this.setState({num:this.state.num+op});
       this.setState({result:0})
     }
-    else if(op == "/100")
-    {
-      // this.setState({num:this.state.num+op});
-      this.setState({tmp:(eval(this.state.num+op))});
-      this.setState({result:0})
-    }
-    else if(op == "* -1")
-    {
-      // this.setState({num:this.state.num+op});
-      this.setState({tmp:(eval(this.state.num+op))});
-      this.setState({num:(eval(this.state.num+op))});
-      this.setState({result:0})
-    }
     else if(op == "=")
     {
       var calcualte = (eval(this.state.num));
